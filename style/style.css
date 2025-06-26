@@ -1,0 +1,11 @@
+.content_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.content {
+    width: calc(100% - 300px);
+    padding: 16px;
+    border: 2px solid green;
+}
