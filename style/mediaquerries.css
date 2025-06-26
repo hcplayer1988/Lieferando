@@ -1,0 +1,9 @@
+@media (max-width: 1000px) {
+    .basket_wrapper {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+
+}
