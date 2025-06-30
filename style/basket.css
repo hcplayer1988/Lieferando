@@ -25,6 +25,7 @@
 .order_output {
     display: flex;
     flex-direction: column;
+    margin-bottom: 12px;
 }
 
 .order_output h4 {
