@@ -23,6 +23,6 @@ function basketPush () {
         "name": dish.name,
         "price": dish.price,
         "count": 1
-    })
+    });
     
 }
