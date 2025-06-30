@@ -45,9 +45,6 @@
         </div>
         <hr>
         
-        
-
-
         <div class="meal_card">
             <div class="meal">
                 <h2>Pizza Margherita</h2>
@@ -64,28 +61,46 @@
               <b>7,99 €</b>
             </div>
         </div>
-
       </section>
-
 
       <section class="basket_wrapper">
         <div class="basket">
           <h3>Warenkorb</h3>
+          
+
+
+
+          <div class="order_output"> 
+            <h4 id="">Pizza</h4>
+            <div class="order_basket_section">
+                <div class="basket_counter">
+                    <img onclick="dishesCountMinus(${i})" src="./assets/icons/minus.png" alt="minus">
+                    <span id="count">1</span>
+                    <img onclick="dishesCountAdd(${i})" src="./assets/icons/plus.png" alt="plus">
+                </div>
+                <span id="">9.99€</span>
+                <img onclick="deleteDishes(${i})" src="./assets/icons/trash.png" alt="trash">
+            </div>
+          </div>
+
           <div class="order">
-            <div>
+            <div class="amount_subtotal">
               <span>Zwischensumme:</span>
               <span>0</span>
             </div>
-            <div>
+            <div class="amount_delivery">
               <span>Lieferkosten:</span>
-              <span>0</span>
+              <span>5,00 €</span>
             </div>
-            <div>
+            <div class="amount_total">
               <span>Gessammtpreis:</span>
               <span>0</span>
             </div>
+          </div>
+          <div class="order_btn">
+            <button id="order">Bestellen</button>
+          </div>
         </div>
-        <button id="order">Bestellen</button>
       </section>
 
 

@@ -1,3 +1,6 @@
+
+// my dischtemplate
+
 function getPizza(pizzas, i) {
     return `
         <div class="meal_card">
@@ -5,7 +8,7 @@ function getPizza(pizzas, i) {
                 <h2>${pizzas.name}</h2>
                 <div class="add_btn">
                   <button onclick="addBtn()" id="add-btn">
-                      <img onclick="addToBasket(${i})" id="plusImg${i}" src="./assets/icons/add_icon.png" alt="">
+                      <img src="./assets/icons/add_icon.png" alt="">
                   </button>
                 </div>
             </div>
@@ -13,10 +16,30 @@ function getPizza(pizzas, i) {
               <span>
                 ${pizzas.description}
               </span>
-              <b${pizzas.price} €</b>
+              <b>${pizzas.price} €</b>
             </div>
         </div>
     `
+}
+
+
+// my Baskettemplate
+
+function getDishes(dish, i) {
+    return `
+        <div class="order_output"> 
+            <h4 id="">${dish.name}</h4>
+            <div class="order_basket_section">
+                <div class="basket_counter">
+                    <img onclick="dishesCountMinus(${i})" src="./assets/icons/minus.png" alt="minus">
+                    <span id="count">${dish.count}</span>
+                    <img onclick="dishesCountAdd(${i})" src="./assets/icons/plus.png" alt="plus">
+                </div>
+                <span id="">${(dish.price * dish.count).toFixed(2)}</span>
+                <img onclick="deleteDishes(${i})" src="./assets/icons/trash.png" alt="trash">
+            </div>
+        </div>
+        `
 }
 
 

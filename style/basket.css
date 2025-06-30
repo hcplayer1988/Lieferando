@@ -12,6 +12,8 @@
     position: sticky;
     top: 0;
     padding: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .basket h3 {
@@ -20,12 +22,86 @@
     margin-bottom: 16px;
 }
 
+.order_output {
+    display: flex;
+    flex-direction: column;
+}
+
+.order_output h4 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.order_basket_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.order_basket_section img{
+    height: 24px;
+}
+
+.order_basket_section img:hover {
+    cursor: pointer;
+}
+
 .basket span {
     font-size: 20px;
+}
+
+.basket_counter {
+    display: flex;
+    justify-content: space-between;
+}
+
+#count {
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .order {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100%;
+}
+
+.order div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.amount_subtotal {
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 4px;
+}
+
+.amount_delivery {
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 4px;
+}
+
+.amount_total {
+    margin-bottom: 4px;
+}
+
+.order_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#order {
+    background-color: rgb(255, 128, 0);
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 32px;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    padding-top: 8px;
 }
