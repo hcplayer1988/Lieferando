@@ -1,11 +1,11 @@
 
 // my dischtemplate
 
-function getPizza(pizzas, i) {
+function getPizza(pizzen, i) {
     return `
         <div class="meal_card">
             <div class="meal">
-                <h2>${pizzas.name}</h2>
+                <h2>${pizzen.name}</h2>
                 <div class="add_btn">
                   <button onclick="addBtn()" id="add-btn">
                       <img src="./assets/icons/add_icon.png" alt="">
@@ -14,9 +14,9 @@ function getPizza(pizzas, i) {
             </div>
             <div class="description">
               <span>
-                ${pizzas.description}
+                ${pizzen.description}
               </span>
-              <b>${pizzas.price} €</b>
+              <b>${pizzen.price} €</b>
             </div>
         </div>
     `
