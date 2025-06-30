@@ -15,7 +15,7 @@
     <script src="./scripts/template.js"></script>
     <script src="./scripts/script.js"></script>
 
-
+    <link rel="shortcut icon" href="./assets/icons/favicon-16x16.png" type="image/x-icon">
   </head>
   <body>
     <header>
@@ -32,28 +32,36 @@
       <section class="content">
         
         <div class="title">
-          
+          <div class="background">
+            <img src="./assets/img/aotImg.jpg" alt="">
+          </div>
           <div class="icon">
             <img src="./assets/icons/android-chrome-192x192.png" alt="">
           </div>
+          <div class="headline">
+            <h1>Pizzaria Siziliana</h1>
+            <span id="span">Bewertung: 4,7 von 5,0</span>
+          </div>
         </div>
+        <hr>
         
-        <h1>Pizzaria Siziliana</h1>
         
 
 
         <div class="meal_card">
             <div class="meal">
-                <h2>Pizza Margherita</h22>
-                    <p class="description">
-                        mit Tomatensauce und Käse
-                    </p>
+                <h2>Pizza Margherita</h2>
+                <div class="add_btn">
+                  <button onclick="addBtn()" id="add-btn">
+                      <img src="./assets/icons/add_icon.png" alt="">
+                  </button>
+                </div>
             </div>
-            <div class="add_btn">
-                <button onclick="addBtn()" id="add-btn">
-                    <img src="./assets/icons/add_icon.png" alt="">
-                </button>
-                
+            <div class="description">
+              <span>
+                mit Tomatensauce, Mozarella und Basilikum
+              </span>
+              <b>7,99 €</b>
             </div>
         </div>
 
