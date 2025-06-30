@@ -2,7 +2,6 @@
     width: 300px;
     flex-grow: 1;
     padding: 16px;
-    border: 2px solid red;
     position: relative;
 }
 
@@ -13,4 +12,20 @@
     position: sticky;
     top: 0;
     padding: 24px;
+}
+
+.basket h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.basket span {
+    font-size: 20px;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }

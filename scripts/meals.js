@@ -32,12 +32,12 @@ let myDishes = [
     {
         "name": "Pizza Döner",
         "price": 13.99,
-        "description": "mit Tomatensoße, Hähnchenkebab, Tomaten, roten Zwiebeln, Knoblauchsoße, Hirtenkäse und Gouda-Mozzarella-Mix"
+        "description": "mit Tomatensoße, Hähnchenkebab, Tomaten, roten Zwiebeln, Knoblauchsoße, Hirtenkäse und Mozzarella"
     },
     {
         "name": "Pizza Diavolo",
         "price": 11.99,
-        "description": "mit Tomatensauce, Peperonisalami, Peperoni, roten Zwiebeln Gouda-Mozzarella-Mix"
+        "description": "mit Tomatensauce, Peperonisalami, Peperoni, roten Zwiebeln Mozzarella"
     },  
 ];
 

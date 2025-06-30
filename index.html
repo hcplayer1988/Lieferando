@@ -17,7 +17,7 @@
 
     <link rel="shortcut icon" href="./assets/icons/favicon-16x16.png" type="image/x-icon">
   </head>
-  <body>
+  <body onload="init()">
     <header>
         <div class="head">
             <div class="head_icon">
@@ -66,15 +66,36 @@
         </div>
 
       </section>
+
+
       <section class="basket_wrapper">
         <div class="basket">
-            <h3>Warenkorb</h3>
+          <h3>Warenkorb</h3>
+          <div class="order">
+            <div>
+              <span>Zwischensumme:</span>
+              <span>0</span>
+            </div>
+            <div>
+              <span>Lieferkosten:</span>
+              <span>0</span>
+            </div>
+            <div>
+              <span>Gessammtpreis:</span>
+              <span>0</span>
+            </div>
         </div>
+        <button id="order">Bestellen</button>
       </section>
+
+
+
     </div>
     <footer>
         <div class="footer">
             <span> &copy; created by Falko 2025</span>
+            <span>Impressum</span>
+            <a href="https://github.com/hcplayer1988">my Github</a>
         </div>
     </footer>
   </body>
