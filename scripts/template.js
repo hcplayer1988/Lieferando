@@ -7,7 +7,7 @@ function getPizza(pizzen, i) {
             <div class="meal">
                 <h2>${pizzen.name}</h2>
                 <div class="plus_btn">
-                  <button onclick="addBtn()" id="plusBtn">
+                  <button onclick="plusToBasket(${i})" id="plusBtn">
                       <img src="./assets/icons/add_icon.png" alt="">
                   </button>
                 </div>
@@ -32,7 +32,7 @@ function getDishes(dish, i) {
             <div class="order_basket_section">
                 <div class="basket_counter">
                     <img onclick="dishesCountMinus(${i})" src="./assets/icons/minus.png" alt="minus">
-                    <span id="count">${dish.count}</span>
+                    <span class="count" id="">${dish.count}</span>
                     <img onclick="dishesCountPlus(${i})" src="./assets/icons/plus.png" alt="plus">
                 </div>
                 <span id="">${(dish.price * dish.count).toFixed(2)}</span>

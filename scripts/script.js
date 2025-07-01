@@ -5,7 +5,8 @@ function init() {
     }
 }
 
-function addToBasket(i) {
+
+function plusToBasket(i) {
     let dish = myDishes[i];
     for (let j = 0; j < basket.length; j++) {
         if (basket[j].name === dish.name) {
@@ -15,11 +16,6 @@ function addToBasket(i) {
             return
         }
     }
-    basketPush();
-}
-
-
-function basketPush () {
     basket.push ({
         "name": dish.name,
         "price": dish.price,
@@ -29,6 +25,8 @@ function basketPush () {
     updateBasket();
     calculatePrice();
 }
+
+
 
 function updateBasket() {
     dokument.getElementById('orderOutput').innerHTML = '';
@@ -88,6 +86,34 @@ function placeOrder() {
 
 
 
+
+
+
+
+//function plusToBasket(i) {
+//    let dish = myDishes[i];
+//    for (let j = 0; j < basket.length; j++) {
+//        if (basket[j].name === dish.name) {
+//            basket[j].count++;
+//            updateBasket();
+//            calculatePrice();
+//            return
+//        }
+//    }
+//    basketPush();
+//}
+
+
+//function basketPush () {
+//    basket.push ({
+//        "name": dish.name,
+//        "price": dish.price,
+//        "count": 1
+//    });
+//    document.getElementById('orderPlacedTxt').innerHTML = '';
+//    updateBasket();
+//    calculatePrice();
+//}
 
 
 
