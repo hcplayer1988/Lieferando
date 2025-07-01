@@ -78,8 +78,12 @@ function calculatePrice() {
 
 
 function placeOrder() {
-
+    basket.length = 0;
+    document.getElementById('orderPlacedTxt').innerHTML = 'Bestellung aufgegeben!'
+    updateBasket();
+    calculatePrice();
 }
+
 
 
 

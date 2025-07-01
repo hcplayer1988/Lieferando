@@ -106,3 +106,9 @@
     padding-bottom: 8px;
     padding-top: 8px;
 }
+
+#orderPlacedTxt {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 24px;
+}
