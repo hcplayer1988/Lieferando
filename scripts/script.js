@@ -66,7 +66,7 @@ function calculatePrice() {
         totalPrice += basket[l].count * basket[l].price;
     }
     document.getElementById('subtotal').innerHTML = `${totalPrice.toFixed(2)}€`;
-    if (basket > 0) {
+    if (basket.length > 0) {
          document.getElementById('totalEndPrice').innerHTML = `${(totalPrice + 5).toFixed(2)}€`;
     } else {
         document.getElementById('totalEndPrice').innerHTML = `${totalPrice.toFixed(2)}€`;

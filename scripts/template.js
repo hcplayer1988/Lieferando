@@ -35,7 +35,7 @@ function getDishes(dish, i) {
                     <span class="count" id="">${dish.count}</span>
                     <img onclick="dishesCountPlus(${i})" src="./assets/icons/plus.png" alt="plus">
                 </div>
-                <span id="">${(dish.price * dish.count).toFixed(2)}</span>
+                <span id="">${(dish.price * dish.count).toFixed(2)} €</span>
                 <img onclick="deleteDishes(${i})" src="./assets/icons/trash.png" alt="trash">
             </div>
         </div>
