@@ -16,6 +16,11 @@ function plusToBasket(i) {
             return
         }
     }
+    basketPush(dish);
+}
+
+
+function basketPush (dish) {
     basket.push ({
         "name": dish.name,
         "price": dish.price,
@@ -25,6 +30,7 @@ function plusToBasket(i) {
     updateBasket();
     calculatePrice();
 }
+
 
 
 function updateBasket() {
@@ -88,30 +94,7 @@ function placeOrder() {
 
 
 
-//function plusToBasket(i) {
-//    let dish = myDishes[i];
-//    for (let j = 0; j < basket.length; j++) {
-//        if (basket[j].name === dish.name) {
-//            basket[j].count++;
-//            updateBasket();
-//            calculatePrice();
-//            return
-//        }
-//    }
-//    basketPush();
-//}
 
-
-//function basketPush () {
-//    basket.push ({
-//        "name": dish.name,
-//        "price": dish.price,
-//        "count": 1
-//    });
-//    document.getElementById('orderPlacedTxt').innerHTML = '';
-//    updateBasket();
-//    calculatePrice();
-//}
 
 
 

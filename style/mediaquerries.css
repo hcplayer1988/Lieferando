@@ -2,8 +2,13 @@
     .basket_wrapper {
         display: none;
     }
+
     .menu {
         width: 100%;
+    }
+
+    #toggleButton {
+        background-color: rgb(255, 128, 0);
     }
 
 }
