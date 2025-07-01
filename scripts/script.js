@@ -63,12 +63,22 @@ function dishesCountPlus () {
 }
 
 
-calculatePrice() {
+function calculatePrice() {
     let totalPrice = 0;
     for (let l = 0; l < basket.length; l++) {
         totalPrice += basket[l].count * basket[l].price;
     }
-    dokument.getElementById()
+    dokument.getElementById('subtotal').innerHTML = `${totalPrice.toFixed(2)}€`;
+    if (basket > 0) {
+         dokument.getElementById('totalPrice').innerHTML = `${(totalPrice + 5).toFixed(2)}€`;
+    } else {
+        dokument.getElementById('totalPrice').innerHTML = `${totalPrice.toFixed(2)}€`;
+    }
+}
+
+
+function placeOrder() {
+
 }
 
 
@@ -87,10 +97,3 @@ calculatePrice() {
 
 
 
-
-
-
-
-//placeOrder() {
-
-//}
