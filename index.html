@@ -18,12 +18,19 @@
   <body onload="init()">
     <header>
         <div class="head">
+          <div class="logos">
             <div class="head_icon">
                 <img src="./assets/icons/android-chrome-192x192.png" alt="">
             </div>
             <div class="head_logo">
                 <img src="./assets/img/Logo.png" alt="">
             </div>
+          </div>
+          <div class="burger_menu">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
         </div>
     </header>
     <div class="content_wrapper d_none">
@@ -54,18 +61,7 @@
           <h3>Warenkorb</h3>
 
 
-          <div class="order_output"> 
-            <h4 id="">Pizza</h4>
-            <div class="order_basket_section">
-                <div class="basket_counter">
-                    <img onclick="dishesCountMinus(${i})" src="./assets/icons/minus.png" alt="minus">
-                    <span id="count">1</span>
-                    <img onclick="dishesCountAdd(${i})" src="./assets/icons/plus.png" alt="plus">
-                </div>
-                <span id="">9.99€</span>
-                <img onclick="deleteDishes(${i})" src="./assets/icons/trash.png" alt="trash">
-            </div>
-          </div>
+          
 
 
           <div class="order">
@@ -83,7 +79,7 @@
             </div>
           </div>
           <div class="order_btn">
-            <button id="order">Bestellen</button>
+            <button onclick="placeOrder()" id="order">Bestellen</button>
           </div>
           <b id="orderPlacedTxt" class="order_placed"></b>
         </div>
