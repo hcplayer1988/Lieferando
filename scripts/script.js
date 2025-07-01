@@ -27,9 +27,8 @@ function plusToBasket(i) {
 }
 
 
-
 function updateBasket() {
-    dokument.getElementById('orderOutput').innerHTML = '';
+    document.getElementById('orderOutput').innerHTML = '';
     for (let k = 0; k < basket.length; k++) {
         document.getElementById('orderOutput').innerHTML += getDishes(basket[k], k);
     }
@@ -47,14 +46,14 @@ function dishesCountMinus(i) {
     if (basket[i].count === 1) {
         deleteDishes(i);
     } else {
-        basket[i].count --;
+        basket[i].count--;
     }
     updateBasket();
     calculatePrice();
 }
 
 
-function dishesCountPlus () {
+function dishesCountPlus (i) {
     basket[i].count ++;
     updateBasket();
     calculatePrice();
@@ -66,11 +65,11 @@ function calculatePrice() {
     for (let l = 0; l < basket.length; l++) {
         totalPrice += basket[l].count * basket[l].price;
     }
-    dokument.getElementById('subtotal').innerHTML = `${totalPrice.toFixed(2)}€`;
+    document.getElementById('subtotal').innerHTML = `${totalPrice.toFixed(2)}€`;
     if (basket > 0) {
-         dokument.getElementById('totalPrice').innerHTML = `${(totalPrice + 5).toFixed(2)}€`;
+         document.getElementById('totalEndPrice').innerHTML = `${(totalPrice + 5).toFixed(2)}€`;
     } else {
-        dokument.getElementById('totalPrice').innerHTML = `${totalPrice.toFixed(2)}€`;
+        document.getElementById('totalEndPrice').innerHTML = `${totalPrice.toFixed(2)}€`;
     }
 }
 
@@ -81,7 +80,6 @@ function placeOrder() {
     updateBasket();
     calculatePrice();
 }
-
 
 
 
