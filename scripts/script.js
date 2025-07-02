@@ -88,10 +88,10 @@ function placeOrder() {
 }
 
 
-// togglefunktion fertig schreiben bzw implementieren
-// function toggleButton() {
-//     document.getElementById('orderBasket').classList.toggle('open')
-// }
+
+ function toggleButton() {
+     document.getElementById('basket').classList.toggle('d_none')
+ }
  
 
 

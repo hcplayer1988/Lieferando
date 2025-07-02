@@ -1,5 +1,5 @@
 
-// my dischtemplate
+// my dischTemplate
 
 function getPizza(pizzen, i) {
     return `
@@ -23,7 +23,7 @@ function getPizza(pizzen, i) {
 }
 
 
-// my Baskettemplate
+// my BasketTemplate
 
 function getDishes(dish, i) {
     return `
