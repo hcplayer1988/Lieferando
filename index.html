@@ -75,32 +75,36 @@
         <div id="pizzaMenu"></div>
       </section>
 
-      <section class="basket_wrapper" id="basket">
-        <div class="toggle_div">
-          <button onclick="toggleButton()" id="toggleButton" class="toggle_button d_none" >Warenkorb</button>
-        </div>
-        <div class="basket">
-          <h3>Warenkorb</h3>
-          <div id="orderOutput" class="order_output"></div>
-          <div class="order">
-            <div class="amount_subtotal">
-                <span>Zwischensumme:</span>
-                <span id="subtotal">0.00€</span>
+
+      
+      <section class="basket_wrapper">
+          <div class="basket" id="basket">
+            <div class="toggle_div" id="toggleDiv">
+              <button onclick="toggleButton()" id="toggleButton" class="toggle_button" >
+                Warenkorb
+              </button>
             </div>
-            <div class="amount_delivery">
-                <span>Lieferkosten:</span>
-                <span>5 €</span>
+            <h3>Warenkorb</h3>
+            <div id="orderOutput" class="order_output"></div>
+            <div class="order">
+              <div class="amount_subtotal">
+                  <span>Zwischensumme:</span>
+                  <span id="subtotal">0.00€</span>
+              </div>
+              <div class="amount_delivery">
+                  <span>Lieferkosten:</span>
+                  <span>5 €</span>
+              </div>
+              <div class="amount_total">
+                  <span>Gesamtpreis:</span>
+                  <span id="totalEndPrice">0.00€</span>
+              </div>
             </div>
-            <div class="amount_total">
-                <span>Gesamtpreis:</span>
-                <span id="totalEndPrice">0.00€</span>
+            <div class="order_btn">
+              <button onclick="placeOrder()" id="order">Bestellen</button>
             </div>
+            <b id="orderPlacedTxt" class="order_placed"></b>
           </div>
-          <div class="order_btn">
-            <button onclick="placeOrder()" id="order">Bestellen</button>
-          </div>
-          <b id="orderPlacedTxt" class="order_placed"></b>
-        </div>
       </section>
 
 

@@ -1,7 +1,7 @@
 function init() {
-    let pizzaMenuInit = document.getElementById('pizzaMenu');   // pizzaMenuInit soll das gleiche sein wie 'pizzaMenu' mit getElemmentById greife ich auf das div mit der gleichnamigen id zu
-    for (let i = 0; i < myDishes.length; i++) {                 // hier gehe ich durch das array myDishes durch, fange bei stelle 0 an bis i so groß ist wie die länge des Arrays und mit i++ erhöhe ich die 0 und damit die stelle des Arrays an der er durchgeht
-        pizzaMenuInit.innerHTML += getPizza(myDishes[i], i);    // hier wird die oben gestellte var mit dem Template getMyPizza
+    let pizzaMenuInit = document.getElementById('pizzaMenu');   
+    for (let i = 0; i < myDishes.length; i++) {                 
+        pizzaMenuInit.innerHTML += getPizza(myDishes[i], i);    
     }
 }
 
@@ -89,9 +89,9 @@ function placeOrder() {
 
 
 
- function toggleButton() {
-     document.getElementById('basket').classList.toggle('d_none')
- }
+function toggleButton() {
+    document.getElementById('basket').classList.toggle('open')
+}
  
 
 
