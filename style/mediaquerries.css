@@ -12,3 +12,71 @@
     }
 
 }
+
+@media (max-width: 800px) {
+    a button{
+        width: 120px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        font-size: 16px;
+    }
+
+    .head_icon img {
+        height: 48px !important;
+    }
+
+    .head_logo img {
+        height: 48px !important;
+    }
+
+    .background img{
+        height:30vh;
+    }
+
+    .headline h1 {
+        font-size: 32px;
+    }
+
+    #span {
+        font-size: 16px;
+    }
+
+    #pizzaSelection {
+        font-size: 32px;
+    }
+
+    .meal h2 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .footer span{
+        font-size: 20px;
+    }
+
+    .footer a{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    a button{
+        width: 90px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+    }
+
+    .food_selection {
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .plus_btn img{
+        height: 32px;
+    }
+}

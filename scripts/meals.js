@@ -25,7 +25,7 @@ let myDishes = [
         "description": "mit Tomatensauce, Hinterkochschinken, Ananas und Mozzarella"
     },
     {
-        "name": "Pizza Los Angeles",
+        "name": "Pizza Holland",
         "price": 11.99,
         "description": "mit Sauce Hollandaise, Broccoli, Hinterkochschinken Mais und Mozzarella"
     },

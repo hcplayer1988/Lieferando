@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./style/mediaquerries.css">
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/foooter.css">
-    <link rel="stylesheet" href="./style/assets.css">
 
     <script src="./scripts/meals.js"></script>
     <script src="./scripts/template.js"></script>
@@ -54,16 +53,25 @@
         <hr>
         <section class="selection">
           <div class="food_selection">
-              <button>Pizza</button>
               <div>
-                <button>Pasta</button>
+                <a href="#pizzaSelection">
+                  <button class="selection_buttons">Pizza</button>
+                </a>
               </div>
               <div>
-                <button>Aufläufe</button>
+                <a href="#">
+                  <button class="selection_buttons">Pasta</button>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <button class="selection_buttons">Aufläufe</button>
+                </a>
               </div>
           </div>
         </section>
         <hr>
+        <h1 id="pizzaSelection">Pizza</h1>
         <div id="pizzaMenu"></div>
       </section>
 
