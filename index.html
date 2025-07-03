@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="./style/header.css">
     <link rel="stylesheet" href="./style/foooter.css">
 
-    <script src="./scripts/meals.js"></script>
-    <script src="./scripts/template.js"></script>
-    <script src="./scripts/script.js"></script>
+    
 
     <link rel="shortcut icon" href="./assets/icons/favicon-16x16.png" type="image/x-icon">
   </head>
@@ -69,6 +67,11 @@
                 </a>
               </div>
           </div>
+          <div class="toggle_div" id="toggleDiv">
+              <button onclick="BasketToggle()" id="toggleButton" class="toggle_button" >
+                  Warenkorb ( Doppelcklick ;) )
+              </button>
+          </div>
         </section>
         <hr>
         <h1 id="pizzaSelection">Pizza</h1>
@@ -77,13 +80,8 @@
 
 
       
-      <section class="basket_wrapper">
+      <section class="basket_wrapper" id="basketWrapper">
           <div class="basket" id="basket">
-            <div class="toggle_div" id="toggleDiv">
-              <button onclick="toggleButton()" id="toggleButton" class="toggle_button" >
-                Warenkorb
-              </button>
-            </div>
             <h3>Warenkorb</h3>
             <div id="orderOutput" class="order_output"></div>
             <div class="order">
@@ -117,6 +115,10 @@
             <a href="https://github.com/hcplayer1988">my Github</a>
         </div>
     </footer>
+
+    <script src="./scripts/meals.js"></script>
+    <script src="./scripts/template.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
 

@@ -88,25 +88,15 @@ function placeOrder() {
 }
 
 
+function BasketToggle() {
+  let button = document.getElementById("toggleButton");
+  let ba = document.getElementById("basketWrapper");
 
-function toggleButton() {
-    document.getElementById('basket').classList.toggle('open')
+  button.addEventListener("click", () => {
+    if (ba.classList.contains("visible")) {
+      ba.classList.remove("visible");
+    } else {
+      ba.classList.add("visible");
+    }
+  });
 }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
